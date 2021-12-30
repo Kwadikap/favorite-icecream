@@ -1,7 +1,7 @@
 const mongoose = require('../db/connections');
 
 
-const IceCream = mongoose.Schema(
+const IceCreamSchema = mongoose.Schema(
     {
         flavor : { type: String, require: true },
         brand : { type: String, require: true }
@@ -12,6 +12,6 @@ const IceCream = mongoose.Schema(
     }
 )
 
-const Icecream = mongoose.Model('IceCream', IceCream);
+const Icecream = mongoose.model('IceCream', IceCreamSchema);
 
 module.exports = Icecream;
