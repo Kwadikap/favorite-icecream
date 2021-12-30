@@ -13,10 +13,6 @@ app.use(CORS());
 
 app.use(express.json());
 
-
-
 app.use('/icecream',router);
-
-
 
 app.listen(PORT, () => console.log( `Server listening on port: ${PORT}`));
